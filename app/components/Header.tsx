@@ -13,32 +13,38 @@ export default function Header() {
       <Link href="/">
         <Logo />
       </Link>
-        <nav className="hidden lg:flex items-center space-x-10">
-          <Link
-            href="/about"
-            className=" cursor-pointer text-[#1F1F1F66] hover:text-textColor"
-          >
-            About Us
-          </Link>
-          <p className=" cursor-pointer text-[#1F1F1F66] hover:text-textColor">
-            Our Services
-          </p>
-          <Link
-            href="/contact"
-            className=" cursor-pointer text-[#1F1F1F66] hover:text-textColor"
-          >
-            Contact Us
-          </Link>
-        </nav>
-        <nav className="hidden lg:flex items-center space-x-4">
+      <nav className="hidden lg:flex items-center space-x-10">
+        <Link
+          href="/about"
+          className=" cursor-pointer text-[#1F1F1F66] hover:text-textColor"
+        >
+          About Us
+        </Link>
+        <p className=" cursor-pointer text-[#1F1F1F66] hover:text-textColor">
+          Our Services
+        </p>
+        <Link
+          href="/contact"
+          className=" cursor-pointer text-[#1F1F1F66] hover:text-textColor"
+        >
+          Contact Us
+        </Link>
+      </nav>
+      <nav className="hidden lg:flex items-center space-x-4">
+        <a
+          target="_blank"
+          href="https://play.google.com/store/apps/details?id=kn.parent.guident"
+        >
           <p className=" cursor-pointer">Parents</p>
-          <a
-            target="_blank"
-            href="https://play.google.com/store/apps/details?id=kn.admin.guident"
-          >
-            <Button title="School Owners" style="bg-btnColor text-white" />
-          </a>
-        </nav>
+        </a>
+
+        <a
+          target="_blank"
+          href="https://play.google.com/store/apps/details?id=kn.admin.guident"
+        >
+          <Button title="School Owners" style="bg-btnColor text-white" />
+        </a>
+      </nav>
       <span className="flex lg:hidden">
         {toggle ? (
           <XMarkIcon onClick={handleToggle} className="h-6 w-6 text-red-500" />
@@ -67,7 +73,13 @@ export default function Header() {
             </Link>
           </nav>
           <nav className="flex flex-col space-y-4">
-            <p className=" cursor-pointer">Parents</p>{' '}
+            <a
+              target="_blank"
+              href="https://play.google.com/store/apps/details?id=kn.parent.guident"
+            >
+              <p className=" cursor-pointer">Parents</p>{" "}
+            </a>
+
             <a
               target="_blank"
               href="https://play.google.com/store/apps/details?id=kn.admin.guident"
@@ -78,5 +90,5 @@ export default function Header() {
         </div>
       )}
     </header>
-  )
+  );
 }
