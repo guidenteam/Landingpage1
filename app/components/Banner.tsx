@@ -43,14 +43,14 @@ export const SwiperCard = () => {
       autoplay={{
         delay: 5000,
         disableOnInteraction: false,
-        pauseOnMouseEnter:true,
-        waitForTransition:true,
-        reverseDirection: true
+        pauseOnMouseEnter: true,
+        waitForTransition: true,
+        reverseDirection: true,
       }}
       loop={true}
       // spaceBetween={12}
       speed={2000}
-      modules={[Autoplay ]}
+      modules={[Autoplay]}
       // effect="fade"
       className="swiper"
     >
@@ -120,7 +120,7 @@ export const SwiperCard = () => {
         </div>
         <div className="flex items-center space-x-3">
           <Image className="w-10" src={downloads} alt="" />
-          <p className="text-sm sm:text-base">10+ Schools Registered</p>
+          <p className="text-sm sm:text-base">200+ Parents Registered</p>
         </div>
       </SwiperSlide>
     </Swiper>
