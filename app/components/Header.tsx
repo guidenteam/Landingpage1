@@ -31,10 +31,7 @@ export default function Header() {
         </Link>
       </nav>
       <nav className="hidden lg:flex items-center space-x-4">
-        <a
-          target="_blank"
-          href="https://play.google.com/store/apps/details?id=kn.parent.guident"
-        >
+        <a target="_blank" href="https://parents.guident.tech/">
           <p className=" cursor-pointer">Parents</p>
         </a>
 
@@ -54,7 +51,7 @@ export default function Header() {
       </span>
       {/* mobile */}
       {toggle && (
-        <div className="flex flex-col space-y-4 bg-white shadow-sm rounded p-5 lg:hidden absolute top-16 right-10 ">
+        <div className="flex flex-col space-y-4 bg-white shadow-xl rounded p-5 lg:hidden absolute top-16 right-10 z-50">
           <nav className="flex space-y-4 flex-col">
             <Link
               href="/about"
@@ -73,10 +70,7 @@ export default function Header() {
             </Link>
           </nav>
           <nav className="flex flex-col space-y-4">
-            <a
-              target="_blank"
-              href="https://play.google.com/store/apps/details?id=kn.parent.guident"
-            >
+            <a target="_blank" href="https://parents.guident.tech/">
               <p className=" cursor-pointer">Parents</p>{" "}
             </a>
 

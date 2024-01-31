@@ -11,9 +11,9 @@ export default function Contact() {
   return (
     <div>
       <Header />
-      <div className="flex flex-col sm:flex-row sm:w-[80%] mx-auto p-5 sm:py-10">
-        <div className="flex flex-col space-y-5 w-full sm:w-1/2">
-          <b className="text-3xl sm:text-5xl ">
+      <div className="flex flex-col lg:flex-row sm:w-[80%] mx-auto p-5 sm:py-10">
+        <div className="flex flex-col space-y-5 w-full lg:w-1/2">
+          <b className="text-3xl lg:text-5xl ">
             Let's Connect and Transform Your Child or School Together!
           </b>
           <p className="text-[#333] text-sm sm:text-base">
@@ -41,7 +41,7 @@ export default function Contact() {
           </div>
         </div>
 
-        <form className="shadow bg-white rounded-lg  mt-10 sm:mt-0 flex flex-col space-y-5 p-4 ml-auto w-full sm:w-[40%] h-[400px]">
+        <form className="shadow bg-white rounded-lg mt-10 lg:mt-0 flex flex-col space-y-5 p-4 ml-auto w-full lg:w-[40%] h-[400px]">
           <div className="flex items-center space-x-4">
             <Input
               label="First Name"

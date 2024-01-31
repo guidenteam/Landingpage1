@@ -27,7 +27,7 @@ export default function About() {
       future where families, educators, and schools dance alongside each other,
       hand in hand, on a lifelong adventure of learning."
         />
-        <div className="flex flex-col space-y-4 sm:space-x-10">
+        <div className="flex flex-col items-center justify-center space-y-4 sm:space-x-10">
           <Image className="" src={about1} alt="" />
           <Image className="" src={about2} alt="" />
         </div>
@@ -92,7 +92,7 @@ export const Values = ({ style, title, body }: Props) => (
     >
       {title}
     </h1>
-    <p className="w-full sm:w-1/2 text-[#222] text-sm sm:text-base">{body}</p>
+    <p className="w-full sm:w-1/2 text-[#222] text-sm sm:text-base text-justify">{body}</p>
   </div>
 )
 

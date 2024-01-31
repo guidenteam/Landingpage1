@@ -13,10 +13,19 @@ export default function Advert2() {
         <p className="text-xs  text-white ">
           One solution, endless possibilities: for families & educators alike.
         </p>
-        <Button title="Try for Free" style="bg-white" />
+        <a
+          target="_blank"
+          href="https://play.google.com/store/apps/details?id=kn.parent.guident"
+        >
+          <Button title="Try for Free" style="bg-white" />
+        </a>
       </div>
       <div className=" flex items-center justify-center">
-        <Image className="w-[90%] sm:w-[80%] object-contain" src={advert} alt="" />
+        <Image
+          className="w-[90%] sm:w-[80%] object-contain"
+          src={advert}
+          alt=""
+        />
       </div>
     </div>
   );
