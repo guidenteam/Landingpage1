@@ -27,7 +27,7 @@ export default function About() {
       future where families, educators, and schools dance alongside each other,
       hand in hand, on a lifelong adventure of learning."
         />
-        <div className="flex flex-col items-center justify-center space-y-4 sm:space-x-10">
+        <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-10">
           <Image className="" src={about1} alt="" />
           <Image className="" src={about2} alt="" />
         </div>
